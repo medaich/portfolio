@@ -1,4 +1,4 @@
-import { cn } from "../__lib/utils";
+import { cn } from "../lib/utils";
 
 interface WrapperProps {
   children: React.ReactNode;
@@ -7,7 +7,9 @@ interface WrapperProps {
 
 const Wrapper = ({ children, className }: WrapperProps) => {
   return (
-    <div className={cn("p-8 md:px-22 lg:px-44", className)}>{children}</div>
+    <div className={cn("p-4 sm:p-8 md:px-22 xl:px-44", className)}>
+      {children}
+    </div>
   );
 };
 
