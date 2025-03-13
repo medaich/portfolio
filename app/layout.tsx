@@ -29,7 +29,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`antialiased ${outfit.variable} ${ovo.variable} scroll-smooth `}
+      className={`antialiased ${outfit.variable} ${ovo.variable} scroll-smooth relative `}
       suppressHydrationWarning
     >
       <body className="font-outfit text-gray-800 bg-gray-50 dark:bg-gray-900 dark:text-gray-100 transition-all duration-300 ease-in-out">

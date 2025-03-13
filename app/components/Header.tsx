@@ -5,13 +5,14 @@ import Wrapper from "./Wrapper";
 import { assets } from "@/app/lib/consts";
 import Nav from "./Nav";
 import { useTheme } from "next-themes";
+import MobileNav from "./MobileNav";
 
 const Header = () => {
   const { theme, setTheme } = useTheme();
 
   return (
     <header>
-      <Wrapper className="flex justify-between items-center py-4">
+      <Wrapper className="flex justify-between items-center py-4 fixed z-20 w-full top-0">
         <Image src={assets.logo} className="w-30 dark:hidden" alt="logo" />
         <Image
           src={assets.logo_dark}
@@ -55,6 +56,8 @@ const Header = () => {
               className="w-3 hidden dark:block"
             />
           </a>
+
+          <MobileNav className="lg:hidden" />
         </div>
       </Wrapper>
     </header>
