@@ -7,7 +7,7 @@ interface WrapperProps {
 
 const Wrapper = ({ children, className }: WrapperProps) => {
   return (
-    <div className={cn("p-4 sm:p-8 md:px-22 xl:px-44", className)}>
+    <div className={cn("p-4 sm:p-8 lg:px-22 xl:px-44", className)}>
       {children}
     </div>
   );

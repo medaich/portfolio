@@ -13,15 +13,17 @@ const Header = () => {
   return (
     <header>
       <Wrapper className="flex justify-between items-center py-4 fixed z-20 w-full top-0">
-        <Image src={assets.logo} className="w-30 dark:hidden" alt="logo" />
-        <Image
-          src={assets.logo_dark}
-          className="w-30 hidden dark:block"
-          alt="logo"
-        />
+        <a href="#top">
+          <Image src={assets.logo} className="w-30 dark:hidden" alt="logo" />
+          <Image
+            src={assets.logo_dark}
+            className="w-30 hidden dark:block"
+            alt="logo"
+          />
+        </a>
         <Nav
           type="horizontal"
-          className="hidden lg:block font-ovo rounded-full shadow-md px-8 text-sm py-3"
+          className="hidden md:block font-ovo rounded-full bg-gray-50/50 dark:bg-gray-900/50 px-8 text-sm py-3"
           ulClassName="gap-8"
         />
 
@@ -57,7 +59,7 @@ const Header = () => {
             />
           </a>
 
-          <MobileNav className="lg:hidden" />
+          <MobileNav className="md:hidden" />
         </div>
       </Wrapper>
     </header>

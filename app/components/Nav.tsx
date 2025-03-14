@@ -25,9 +25,9 @@ const Nav = ({ type, className, ulClassName }: NavProps) => {
         <li>
           <a href="#about">About me</a>
         </li>
-        <li>
+        {/* <li>
           <a href="#services">Services</a>
-        </li>
+        </li> */}
         <li>
           <a href="#work">My work</a>
         </li>
